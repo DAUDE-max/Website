@@ -1,60 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+<script type=module src=templates.js></script>
 <head>
 <link rel="stylesheet" href="style.css">
-<title>StageOn</title>
+<title>StageOn - Impressum</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
 </head>
 <body>
-    
-    <!--Tableiste-->
-    <header>
-        <a href="index.html">Home</a>
-        <a href="leistungen.html">Leistungen</a>
-        <a href="kontakt.html">Kontakt</a>
-    </header>
 
-    
+<!--Navigations-leiste-->
+    <main-header></main-header>
 
-    <p>
-        <h1>
-            Impressum:
-        </h1>
-        <br><br>
-        <h2>
-            Angaben gemäß §5 TMG
-        </h2>
-        <br>
-        Stage On
-        <br>
-        Schmid und Ordosch Gbr
-        <br>
-        <br>
-        Pettenkoferstraße 1, 85053 Ingolstadt
-        <br>
-        <br>
-        mobil: <a href= "#" onclick="CopyToClipboard('015224085858');return false;"> +49 152 24085858 </a>
-        <br>
-        email: <a href= "#" onclick="CopyToClipboard('stageon.eventtechnik@gmail.com');return false;"> stageon.eventtechnik@gmail.com </a>
-        <br>
-        <br>
-        USt-IdNr: DE370607943
-    </p>
+<!-- Seiteninhalt -->
 
+    <div class="main">
+    <div class="main__container">
+        <div class="main__content">
+             <h3> Impressum: </h3>
+            <br><br>
+            <h4> Angaben gemäß §5 TMG </h4>
+            <br> <p>StageOn</p>
+            <br> <p>Schmid und Ordosch Gbr</p>
+            <br> <br> <p> Pettenkoferstraße 1, 85053 Ingolstadt </p>
+            <br>
+            <br> <p>Mobil: </p> <a href= "#" onclick="CopyToClipboard('015224085858');return false;"> +49 152 24085858 </a>
+            <br> <p>E-Mail:</p> <a href= "#" onclick="CopyToClipboard('stageon.eventtechnik@gmail.com');return false;"> stageon.eventtechnik@gmail.com </a>
+            <br> <br>
+            <p>USt-IdNr: DE370607943</p>
 
-     
-    <!--Fußleiste-->
-    <div class="footer">
-        <a href="impressum.html">Impressum</a>
-        <p>Fragen an:
-        <a href= "#" onclick="CopyToClipboard('stageon.eventtechnik@gmail.com');return false;"> stageon.eventtechnik@gmail.com </a>    
-        </p>
+        </div>
+        <div class="main__img--container">
+            <img src="images/logo.png" alt="pic" id="main__img">
+        </div>
     </div>
-    <script src="script.js"></script>
+    </div>
+
+
+
+<!--Fußleiste-->
+    <main-footer></main-footer>
+
 
 </body>
-
-<!--Seiteninhalt
-    
-   Inhalt passt, design fehlt
-    
-    -->

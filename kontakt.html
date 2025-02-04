@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+<script type=module src=templates.js></script>
 <head>
 <link rel="stylesheet" href="style.css">
-<title>StageOn</title>
+<title>StageOn - Kontakt</title>
 </head>
 <body>
-    
-    <!--Tableiste-->
-    <header>
-        <a href="index.html">Home</a>
-        <a href="leistungen.html">Leistungen</a>
-        <a href="kontakt.html">Kontakt</a>
-    </header>
+
+<!--Navigations-leiste-->
+    <main-header></main-header>
 
     <!--Seiteninhalt
     
@@ -22,38 +19,35 @@
 
     -->
 
-    <p>
-        <h1>Unser Team,</h1>
-        <br>
+<div class="main">
+    <div class="main__container">
+        <div class="main__content">
+            <h2> Unser Team </h2>
+            <br><br>
+            <h3> Schmid Maximilian und Ordosch Raul </h3>
 
-        bestehend aus Schmid Maximilian und Ordosch Raul:
-    </p>
-    <img src="schmid_img" alt="Schmid Maximilian">
-    <img src="ordosch_img" alt="Ordosch Raul">
-    <p>
-        <h2>Kontakt:</h2>
-        Per E-Mail an:
-        <a href= "#" onclick="CopyToClipboard('stageon.eventtechnik@gmail.com');return false;"> stageon.eventtechnik@gmail.com </a>
-        <br>
-        Telefonisch unter:
-        <a href= "#" onclick="CopyToClipboard('015224085858');return false;"> +49 152 24085858 </a>
-    </p>
+            <br> <h4>Kontakt</h4>
+            <br>
+            <br>
+            <br> <p>Telefonisch unter: </p> <a href= "#" onclick="CopyToClipboard('015224085858');return false;"> +49 152 24085858 </a>
+            <br> <p>per E-Mail an:</p> <a href= "#" onclick="CopyToClipboard('stageon.eventtechnik@gmail.com');return false;"> stageon.eventtechnik@gmail.com </a>
 
-
-
-
-
-
-
-    
-     
-    <!--Fußleiste-->
-    <div class="footer">
-        <a href="impressum.html">Impressum</a>
-        <p>Fragen an:
-        <a href= "#" onclick="CopyToClipboard('stageon.eventtechnik@gmail.com');return false;"> stageon.eventtechnik@gmail.com </a>    
-        </p>
+        </div>
+        <div class="main__img--container">
+            <img src="images/logo.png" alt="pic" id="main__img">
+        </div>
     </div>
-    <script src="script.js"></script>
+</div>
+
+
+
+
+
+
+
+
+<!--Fußleiste-->
+    <main-footer></main-footer>
+
 
 </body>

@@ -1,43 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+<script type=module src=templates.js></script>
 <head>
 <link rel="stylesheet" href="style.css">
-<title>StageOn</title>
+<title>StageOn - Home</title>
 </head>
 <body>
 
-    <!--Tableiste-->
-    <header>
-        <a href="index.html">Home</a>
-        <a href="leistungen.html">Leistungen</a>
-        <a href="kontakt.html">Kontakt</a>
-    </header>
+    <!--Navigations-leiste-->
+    <main-header></main-header>
 
 
+    <!--Seiteninhalt
+        Hier kommen so Referenzen und bilder von Jobs rein.
+        Sytle - mal Bilder, mal Text
+        Am besten: großes Bild & Überschrift und Text darunter
+        i made some, ich bin hart überfragt-->
 
-    <p><h1>Referenzen:</h1></p>
-
-    <ol>
-        <li>
-            <p> 
-                <!--Seiteninhalt
-                 Hier kommen so Referenzen und bilder von Jobs rein.
-                Sytle - mal Bilder, mal Text
-                Am besten: großes Bild & Überschrift und Text darunter
-                i made some, ich bin hart überfragt-->
-            </p>
-        </li>
-    </ol>
-    
+    <div class="main">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>StageOn</h1>
+                <h2>Eventtechnik</h2>
+            </div>
+            <div class="main__img--container">
+                <img src="images/StageOnLogo.png" alt="pic" id="main__img">
+            </div>
+        </div>
+    </div>
     
 
     <!--Fußleiste-->
-    <div class="footer">
-        <a href="impressum.html">Impressum</a>
-        <p>Fragen an:
-        <a href= "#" onclick="CopyToClipboard('stageon.eventtechnik@gmail.com');return false;"> stageon.eventtechnik@gmail.com </a>    
-        </p>
-    </div>
+    <main-footer></main-footer>
+
+
     <script src="script.js"></script>
 
 </body>
