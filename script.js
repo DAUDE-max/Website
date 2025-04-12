@@ -1,7 +1,3 @@
-const menu = document.querySelector("#mobile-menu")
-const menuLinks = document.querySelector(".navbar__menu")
-
-
 function CopyToClipboard(text) {
     navigator.clipboard.writeText(text).then(function() {
       // Erfolgsmeldung anzeigen
@@ -12,11 +8,3 @@ function CopyToClipboard(text) {
       console.error('Fehler beim Kopieren:', err);
     })
   }
-  const menu = document.querySelector("#mobile-menu")
-  const menuLinks = document.querySelector(".navbar__menu")
-
-
-  menu.addEventListener("click", function() {
-      menu.classList.toggle("is-active");
-      menuLinks.classList.toggle("active");
-  })
