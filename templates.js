@@ -1,5 +1,6 @@
 class MainHeader extends HTMLElement {
     connectedCallback() {
+
         this.innerHTML = `
             <nav class="navbar">
                 <div class="navbar__container">
