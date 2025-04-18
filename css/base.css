@@ -11,7 +11,7 @@
 body {
   margin: 0;
   line-height: 1.6;
-  background-color: #fff; /* Weißer Hintergrund für Main */
+  background-color: #F2F2F2; /* Weißer Hintergrund für Main */
 }
 
 
@@ -172,7 +172,6 @@ body {
   align-items: center;
   margin: 0 auto;
   height: 90vh;
-  background-color: #fff;
   width: 100%;
   padding: 0 30px;
 }
@@ -355,29 +354,30 @@ body {
   }
 }
 
-.email-wrapper {
-  position: relative;
-  display: inline-block;
-}
 
-.footer__email--copy {
+.email--copy {
   color: #fff;
   text-decoration: underline;
   margin-left: 5px;
   cursor: pointer;
-  position: relative;
-  z-index: 1;
 }
 
-.footer__email--copy:hover {
+.email--copy-dark {
+  text-decoration: underline;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+ .email--copy:hover{
   color: #ccc;
 }
 
-.footer__copied-bubble {
+.email--copy-dark:hover{
+    color: #808080;
+}
+
+.copied-bubble {
   position: absolute;
-  bottom: 120%;
-  left: 50%;
-  transform: translateX(-50%);
   background-color: #fff;
   color: black;
   padding: 4px 8px;
@@ -390,7 +390,26 @@ body {
   z-index: 10;
 }
 
-.footer__copied-bubble.visible {
+.copied-bubble.visible {
+  opacity: 1;
+}
+
+.copied-bubble.inverted {
+  position: absolute;
+  background-color: #222;      /* dunkler Hintergrund */
+  color: #fff;                 /* heller Text */
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.copied-bubble.inverted.visible {
   opacity: 1;
 }
 

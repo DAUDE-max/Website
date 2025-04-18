@@ -71,10 +71,9 @@ class MainFooter extends HTMLElement {
               <a href="impressum.html">Impressum</a>
               <p class="footer__email">
                 Fragen an:
-                <span class="email-wrapper">
-                    <span id="email" class="footer__email--copy">stageon.eventtechnik@gmail.com</span>
-                    <span id="copied-msg" class="footer__copied-bubble">Kopiert!</span>
-                  </span>
+                    <span class="email--copy" onclick="CopyToClipboard('stageon.eventtechnik@gmail.com', this, 'dark')">
+                        stageon.eventtechnik@gmail.com
+                    </span>
               </p>
             </div>
           </div>
@@ -96,24 +95,13 @@ class MainFooter extends HTMLElement {
       </footer>
     `;
 
-    setTimeout(() => {
-      const email = document.getElementById('email');
-      const copiedMsg = document.getElementById('copied-msg');
 
-      if (email) {
-        email.style.cursor = 'pointer';
-        email.addEventListener('click', () => {
-          navigator.clipboard.writeText(email.textContent).then(() => {
-            copiedMsg.classList.add('visible');
-            setTimeout(() => {
-              copiedMsg.classList.remove('visible');
-            }, 1500);
-          });
-        });
-      }
-    }, 0);
   }
 }
 
 customElements.define('main-header', MainHeader);
 customElements.define('main-footer', MainFooter);
+
+
+
+

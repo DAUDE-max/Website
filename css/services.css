@@ -41,7 +41,8 @@
 .service-text h1 {
     width: 200%;
     font-size: 6rem;
-    margin-top: 6rem;
+    margin-top: 4rem;
+    margin-bottom: -3rem;
 }
 
 .service-text h2 {
