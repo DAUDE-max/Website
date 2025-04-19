@@ -165,6 +165,14 @@ body {
   }
 }
 
+.balken {
+    display: flex;
+    height: 0.5rem;
+    background: #131313cc;
+    justify-content: stretch;
+    margin-bottom: 6rem;
+}
+
 /* === Main Content === */
 .main__container {
   display: grid;

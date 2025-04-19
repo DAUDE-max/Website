@@ -1,7 +1,5 @@
-// script.js (regular script)
-function CopyToClipboard(text, targetEl) {
+function CopyToClipboard(text, targetEl, inverted = false) {
   if (!navigator.clipboard) {
-    // Fallback for browsers without Clipboard API
     const tempInput = document.createElement("input");
     tempInput.value = text;
     document.body.appendChild(tempInput);
@@ -12,14 +10,22 @@ function CopyToClipboard(text, targetEl) {
     navigator.clipboard.writeText(text);
   }
 
-  showCopiedTooltip(targetEl);
+  showCopiedTooltip(targetEl, inverted);
 }
 
-function showCopiedTooltip(target) {
+function showCopiedTooltip(target, inverted = false) {
+  console.log("inverted:", inverted); // <== check!
+
   if (!target) return;
 
+  const existingTooltip = document.querySelector(".copied-bubble");
+    if (existingTooltip) existingTooltip.remove();
+
   const tooltip = document.createElement("div");
-  tooltip.className = "copied-bubble";
+  tooltip.classList.add("copied-bubble");
+  if (inverted) {
+    tooltip.classList.add("inverted");
+  }
   tooltip.textContent = "Kopiert!";
 
   document.body.appendChild(tooltip);
@@ -29,7 +35,7 @@ function showCopiedTooltip(target) {
 
   tooltip.style.left = `${rect.left + rect.width / 2}px`;
   tooltip.style.top = `${scrollY + rect.top - 30}px`;
-  tooltip.style.transform = "translateX(-50%)";
+  tooltip.style.transform = "translateX(-50%)";  // <--- richtiges Anführungszeichen!
 
   requestAnimationFrame(() => tooltip.classList.add("visible"));
 
