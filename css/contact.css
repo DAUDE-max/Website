@@ -25,17 +25,48 @@
 }
 
 .contact-contact {
-    margin-top: 6rem;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    margin-bottom: 3rem;
 }
 
+.contact-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 16rem;
+    width: 80%;
+    margin: 3rem auto;
+}
+
+.contact-row-element {
+    background-color: #e0e0e0; /* light grey */
+    padding: 1rem;
+    border-radius: 1rem; /* round corners */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1;
+    gap: 0.5rem;
+}
+
+
+
 .contact-contact h1 {
+    text-align: center;
     font-size: 3rem;
 }
 
+.b1 {
+    display: flex;
+    height: 0.5rem;
+    background: #131313cc;
+    justify-content: stretch;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
 
 
 .contact-img{

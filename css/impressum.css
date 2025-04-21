@@ -1,0 +1,14 @@
+.impressum {
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imp-cont-e {
+    display: flex; /* Flexbox für horizontale Ausrichtung */
+    align-items: center; /* Vertikale Zentrierung der Elemente */
+    gap: 1rem; /* Abstand zwischen dem Label und dem Inhalt */
+}
