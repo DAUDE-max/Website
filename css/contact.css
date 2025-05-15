@@ -84,3 +84,54 @@
     height: 40rem;
     display: block;
 }
+
+@media (max-width: 768px) {
+
+    .contact-team {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .contact-img {
+        width: 90%;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    #contact-img {
+        width: 80%;
+        height: auto;
+    }
+
+    .contact-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-row {
+        flex-direction: column;
+        gap: 2rem;
+        width: 90%;
+            align-items: center;
+
+    }
+
+    .contact-row-element {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .b1 {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .contact-text h1 {
+        font-size: 6rem;
+    }
+
+    .contact-contact h1 {
+        font-size: 2.5rem;
+    }
+}

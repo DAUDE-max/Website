@@ -36,6 +36,7 @@
     align-items: center;
     text-align: center;
     margin: 0 auto;
+    height: auto;
 }
 
 .service-text h1 {
@@ -43,6 +44,7 @@
     font-size: 6rem;
     margin-top: 1rem;
     margin-bottom: -5rem;
+    height: auto;
 }
 
 .service-text h2 {
@@ -78,26 +80,83 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Mobile Style */
 @media screen and (max-width: 768px) {
+
+  /* Alle Service-Items auf column setzen, egal ob .reverse */
   .service-item {
+  flex-direction: column; /* Reihenfolge immer: Bild oben, Text unten */
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1rem;
+      width: 100%;
+      padding: 1rem 0;
+        min-height: 300px;
+
+  }
+
+  .service-item.reverse {
+    flex-direction: column-reverse !important; /* Reihenfolge immer: Bild oben, Text unten */
+    justify-content: flex-end;
+  }
+
+  /* Neutralisiere alle translateX Effekte auf mobilen Geräten */
+  .service-image:nth-child(odd),
+  .service-image:nth-child(even) {
     transform: none !important;
-    width: 100%;
-    padding: 3rem 1.5rem 2rem 1.5rem;
   }
 
-  .service-image {
-    width: 100%;
-    transform: translateY(8%);
-    margin-top: -3rem;
+  /* Bild und Text jeweils volle Breite */
+  .service-image,
+  .service-text {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center;
+    transform: none !important;
+    height: auto;
   }
-}
 
-.b1 {
-    display: flex;
+  .service-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+
+  }
+
+  /* Etwas weniger Abstand zwischen Items */
+  .services-section {
+    gap: 3rem;
+    padding: 0 1rem;
+
+  }
+
+  .service-text h1 {
+    margin-bottom: -1rem;
+  }
+
+  /* Text anpassen */
+  .service-text h2 {
+    font-size: 1.8rem;
+    margin: 1rem 0 0.5rem 0;
+  }
+
+  .service-text p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .b2 {
+    width: 100vw; /* volle Viewport-Breite */
+    margin-left: calc(-1 * (100vw - 100%) / 2); /* negiert das Padding/zentriert */
     height: 0.5rem;
     background: #131313cc;
-    justify-content: stretch;
-    margin-top: 6rem;
-    margin-bottom: -2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
 }
+
+
+
+
+
+
