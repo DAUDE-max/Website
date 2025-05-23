@@ -342,29 +342,6 @@ body {
   transition: 0.3s ease-out;
 }
 
-/* === Footer Text (Right) === */
-.footer__text {
-  color: #fff;
-  font-size: 1rem;
-  text-align: right;
-}
-
-/* === Footer Responsive === */
-@media screen and (max-width: 820px) {
-  .footer__container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 2rem;
-  }
-
-  .footer__left,
-  .footer__right {
-    align-items: center;
-    text-align: center;
-  }
-
-
 .email--copy {
   color: #fff;
   text-decoration: underline;
@@ -422,6 +399,29 @@ body {
 .copied-bubble.inverted.visible {
   opacity: 1;
 }
+
+/* === Footer Text (Right) === */
+.footer__text {
+  color: #fff;
+  font-size: 1rem;
+  text-align: right;
+}
+
+/* === Footer Responsive === */
+@media screen and (max-width: 820px) {
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .footer__left,
+  .footer__right {
+    align-items: center;
+    text-align: center;
+  }
+
 
 .footer__text{
     color: #fff;
