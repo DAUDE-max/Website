@@ -35,3 +35,24 @@
     height: 40rem;
     display: block;
 }
+
+@media screen and (max-width: 768px) {
+    .home-container {
+        grid-template-columns: auto;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .home-content{
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .home-container h2 { font-size: 2.5rem; }
+    .home-container h1 { font-size: 3rem; }
+
+    .home-img {
+        width: 80%;
+        margin: 0 auto;
+    }
+}

@@ -46,7 +46,7 @@
     padding: 1rem;
     border-radius: 1rem; /* round corners */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     flex: 1;
     gap: 0.5rem;
@@ -80,15 +80,15 @@
 }
 
 #contact-img {
-    width: auto;
-    height: 40rem;
+    width: 40rem;
+    height: auto;
     display: block;
 }
 
 @media (max-width: 768px) {
 
     .contact-team {
-        flex-direction: column-reverse;
+        flex-direction: column;
         text-align: center;
     }
 
