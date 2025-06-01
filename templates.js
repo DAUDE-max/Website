@@ -68,7 +68,7 @@ class MainFooter extends HTMLElement {
 
           <div class="footer__section footer__left">
             <div class="footer__link--items">
-              <a href="impressum.html">Impressum</a>
+              <a href="impressum.html">Impressum / Datenschutz</a>
               <p class="footer__email">
                 Fragen an:
                     <span class="email--copy" onclick="CopyToClipboard('stageon.eventtechnik@gmail.com', this)">
