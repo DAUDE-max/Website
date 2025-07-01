@@ -1,4 +1,5 @@
 .home-container {
+    min-height: 80vh;
     display: flex;
     align-items: center; /* vertical centering */
     gap: 2rem; /* space between text and image */

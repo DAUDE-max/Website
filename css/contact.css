@@ -46,7 +46,7 @@
     padding: 1rem;
     border-radius: 1rem; /* round corners */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     flex: 1;
     gap: 0.5rem;

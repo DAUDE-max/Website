@@ -2,9 +2,11 @@
   display: flex;
   flex-direction: column;
   gap: 6rem;
-  margin: 6rem auto;
+  margin: -2rem auto 6rem;
   max-width: 2200px;
   padding: 0 2rem;
+
+
 }
 
 .service-item {
@@ -28,6 +30,16 @@
   transform: translateX(5%); /* Nach rechts verschieben */
 }
 
+.service-header {
+    display: flex;
+    justify-content: center;
+}
+
+.service-header h1 {
+    margin: 1rem 0;
+    font-size: 6rem;
+}
+
 .service-text {
   width: 30%;
     display: flex;
@@ -37,15 +49,10 @@
     text-align: center;
     margin: 0 auto;
     height: auto;
+    margin-bottom: 2rem;
 }
 
-.service-text h1 {
-    width: 200%;
-    font-size: 6rem;
-    margin-top: 1rem;
-    margin-bottom: -5rem;
-    height: auto;
-}
+
 
 .service-text h2 {
   font-size: 2.5rem;
@@ -79,6 +86,15 @@
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
+
+.b2 {
+    width: 100vw; /* volle Viewport-Breite */
+    margin-left: calc(-1 * (100vw - 100%) / 2); /* negiert das Padding/zentriert */
+    height: 0.5rem;
+    colour: #131313cc;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
 
 @media screen and (max-width: 768px) {
 
@@ -149,7 +165,7 @@
     width: 100vw; /* volle Viewport-Breite */
     margin-left: calc(-1 * (100vw - 100%) / 2); /* negiert das Padding/zentriert */
     height: 0.5rem;
-    background: #131313cc;
+    colour: #131313cc;
     margin-top: 3rem;
     margin-bottom: 3rem;
   }
