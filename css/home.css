@@ -56,4 +56,9 @@
         width: 80%;
         margin: 0 auto;
     }
+
+    #home-img {
+        width: 100%;
+        height: auto;
+    }
 }
