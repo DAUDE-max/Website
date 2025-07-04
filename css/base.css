@@ -11,14 +11,12 @@
 body {
   margin: 0;
   line-height: 1.6;
-  background-color: #F2F2F2; /* Weißer Hintergrund für Main */
+  background-color: #F2F2F2;
 }
 
-
-
-/* === Navigation (Verbesserter Frosted Glass Style mit Originalfarbe) === */
+/* === Navigation === */
 .navbar {
-  background: rgba(19, 19, 19, 0.8); /* Originalfarbe mit Transparenz */
+  background: rgba(19, 19, 19, 0.8);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   height: 80px;
@@ -33,7 +31,6 @@ body {
   transition: box-shadow 0.3s ease;
 }
 
-/* Navbar Shadow on Scroll (Klasse wird später mit JS hinzugefügt) */
 .navbar.scrolled {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
@@ -100,7 +97,7 @@ body {
   }
 
 
-/* Mobile Navbar */
+/* === Mobile Navigation === */
 @media screen and (max-width: 768px) {
   .navbar__menu {
     display: grid;
@@ -113,7 +110,7 @@ body {
     padding: 15px;
     opacity: 0;
     transition: all 0.5s ease;
-    background: rgba(19, 19, 19, 0.95); /* Originalfarbe mobil */
+    background: rgba(19, 19, 19, 0.95);
     backdrop-filter: blur(20px);
     z-index: -1;
     height: auto;
@@ -138,7 +135,6 @@ body {
   }
 
   .navbar__item.active {
-    top:0;
     background: rgba(255, 255, 255, 0.15);
     color: #e0e0e0;
   }
@@ -173,90 +169,16 @@ body {
   }
 }
 
+/* === Utility Classes === */
 .balken {
-    display: flex;
-    height: 0.5rem;
-    background: #131313cc;
-    justify-content: stretch;
-    margin-bottom: 6rem;
-}
-
-/* === Main Content === */
-.main__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  margin: 0 auto;
-  height: 90vh;
-  width: 100%;
-  padding: 0 30px;
-}
-
-.main__content {
-  text-align: left;
-}
-
-.main__content h1,
-.main__content h2,
-.main__content h3,
-.main__content h4,
-.main__content p,
-.main__content a {
-  color: #000;
-  background: none;
-  -webkit-background-clip: initial;
-  -webkit-text-fill-color: initial;
-}
-
-.main__content h1 { font-size: 4rem; }
-.main__content h2 { font-size: 3rem; }
-.main__content h3 { font-size: 2rem; }
-.main__content h4 { font-size: 1.5rem; }
-.main__content p,
-.main__content a { font-size: 1rem; }
-
-.main__content a:hover {
-  color: #555;
-}
-
-.main__img--container {
-  text-align: center;
-}
-
-#main__img {
-  height: 80%;
-  width: 80%;
-}
-
-/* Main (mobile) */
-@media screen and (max-width: 768px) {
-  .main__container {
-    grid-template-columns: auto;
-    height: auto;
-  }
-
-  .main__content {
-    text-align: center;
-    margin-bottom: 4rem;
-  }
-
-  .main__content h1 { font-size: 2.5rem; margin-top: 2rem; }
-  .main__content h2 { font-size: 3rem; }
-
-  .main__img--container {
-    width: 80%;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .main__content h1 { font-size: 2rem; margin-top: -7rem; }
-  .main__content h2 { font-size: 1.5rem; }
-  .main__img--container { margin-top: -40rem; }
+  display: flex;
+  height: 0.5rem;
+  background: #131313cc;
+  justify-content: stretch;
+  margin-bottom: 6rem;
 }
 
 /* === Footer === */
-/* Hintergrund über ganze Seite */
 .footer {
   background-color: #343434;
   width: 100%;
@@ -268,9 +190,9 @@ body {
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
-  padding: 2rem 2rem;
-  max-width: 2000px;       /* <- passt du an deine Wunschbreite an */
-  margin: 0 auto;          /* <- zentriert Inhalt im Viewport */
+  padding: 2rem;
+  max-width: 2000px;
+  margin: 0 auto;
   flex-wrap: wrap;
   gap: 2rem;
 }
@@ -297,7 +219,6 @@ body {
   text-align: right;
 }
 
-/* === Footer Logo === */
 .footer__logo {
   display: flex;
   align-items: center;
@@ -325,7 +246,6 @@ body {
   display: block;
 }
 
-/* === Footer Links & E-Mail === */
 .footer__link--items {
   display: flex;
   flex-direction: column;
@@ -347,11 +267,16 @@ body {
   transition: 0.3s ease-out;
 }
 
+/* === Copy to Clipboard Styles === */
 .email--copy {
   color: #fff;
   text-decoration: underline;
   margin-left: 5px;
   cursor: pointer;
+}
+
+.email--copy:hover {
+  color: #ccc;
 }
 
 .email--copy-dark {
@@ -360,12 +285,8 @@ body {
   cursor: pointer;
 }
 
- .email--copy:hover{
-  color: #ccc;
-}
-
-.email--copy-dark:hover{
-    color: #808080;
+.email--copy-dark:hover {
+  color: #808080;
 }
 
 .copied-bubble {
@@ -387,25 +308,99 @@ body {
 }
 
 .copied-bubble.inverted {
-  position: absolute;
-  background-color: #222;      /* dunkler Hintergrund */
-  color: #fff;                 /* heller Text */
-  padding: 4px 8px;
-  font-size: 0.8rem;
-  border-radius: 6px;
-  white-space: nowrap;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-  z-index: 10;
+  background-color: #222;
+  color: #fff;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-.copied-bubble.inverted.visible {
-  opacity: 1;
+/* === Footer === */
+.footer {
+  background-color: #343434;
+  width: 100%;
 }
 
-/* === Footer Text (Right) === */
+.footer__container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+  max-width: 2000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer__section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__left {
+  align-items: center;
+  text-align: left;
+}
+
+.footer__center {
+  align-items: center;
+  text-align: center;
+}
+
+.footer__right {
+  align-items: center;
+  text-align: right;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  gap: 16px;
+  line-height: 1;
+}
+
+.footer__logo a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  gap: 16px;
+  text-decoration: none;
+}
+
+#footer__logo {
+  width: auto;
+  height: 80px;
+  display: block;
+}
+
+.footer__link--items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer__link--items a,
+.footer__link--items p,
+.footer__email {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__link--items a:hover {
+  color: #e0e0e0;
+  transition: 0.3s ease-out;
+}
+
 .footer__text {
   color: #fff;
   font-size: 1rem;
@@ -427,17 +422,11 @@ body {
     text-align: center;
   }
 
-
-.footer__text{
-    color: #fff;
-    font-size: 1rem;
+  .footer__text {
     text-align: center;
-}
+  }
 
-.footer__link--items {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
+  .footer__link--items {
+    align-items: center;
+  }
 }
