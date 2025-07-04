@@ -148,6 +148,7 @@
 
   .service-text h1 {
     margin-bottom: -1rem;
+    font-size: 3rem; /* Kleinere Schriftgröße für mobile Geräte */
   }
 
   /* Text anpassen */
