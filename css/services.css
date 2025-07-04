@@ -151,6 +151,10 @@
     font-size: 3rem; /* Kleinere Schriftgröße für mobile Geräte */
   }
 
+  .service-header h1 {
+    font-size: 3rem; /* Kleinere Schriftgröße für mobile Geräte */
+  }
+
   /* Text anpassen */
   .service-text h2 {
     font-size: 1.8rem;
