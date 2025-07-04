@@ -5,7 +5,7 @@ class MainHeader extends HTMLElement {
             <nav class="navbar">
                 <div class="navbar__container">
                     <a href="index.html" id="navbar__logo">
-                        <img src="images/StageOnLogoSimple.png" alt="StageOn Logo" id="logo__img">
+                        <img src="img/logos/StageOnLogoSimple.png" alt="StageOn Logo" id="logo__img">
                         StageOn
                     </a>
                     <div class="navbar__toggle" id="mobile-menu">
@@ -81,7 +81,7 @@ class MainFooter extends HTMLElement {
           <div class="footer__section footer__center">
             <div class="footer__logo">
               <a href="index.html">
-                <img src="images/StageOnLogoSimple.png" alt="StageOn Footer Logo" id="footer__logo">
+                <img src="img/logos/StageOnLogoSimple.png" alt="StageOn Footer Logo" id="footer__logo">
                 StageOn
               </a>
             </div>
