@@ -4,8 +4,12 @@ class MainHeader extends HTMLElement {
         this.innerHTML = `
             <nav class="navbar">
                 <div class="navbar__container">
-                    <a href="index.html" id="navbar__logo">
-                        <img src="img/logos/StageOnLogoSimple.png" alt="StageOn Logo" id="logo__img">
+                    <a href="/index.html" id="navbar__logo">
+                        <picture>
+                            <source srcset="/img/logos/StageOnLogoSimple.webp" type="image/webp">
+                            <source srcset="/img/logos/StageOnLogoSimple.png" type="image/png">
+                            <img src="/img/logos/StageOnLogoSimple.png" alt="StageOn Logo" id="logo__img">
+                        </picture>
                         StageOn
                     </a>
                     <div class="navbar__toggle" id="mobile-menu">
@@ -45,7 +49,7 @@ class MainHeader extends HTMLElement {
 
         menuItems.forEach(item => {
             const href = item.getAttribute('href');
-            if (href === currentPage || (currentPage === "" && href === "index.html")) {
+            if (href === currentPage || (currentPage === "" && href === "/index.html")) {
                 item.classList.add('active');
             }
         });
@@ -81,7 +85,12 @@ class MainFooter extends HTMLElement {
           <div class="footer__section footer__center">
             <div class="footer__logo">
               <a href="index.html">
-                <img src="img/logos/StageOnLogoSimple.png" alt="StageOn Footer Logo" id="footer__logo">
+                <picture>
+                    <source srcset="img/logos/StageOnLogoSimple.webp" type="image/webp">
+                    <source srcset="img/logos/StageOnLogoSimple.png" type="image/png">
+                    <img src="img/logos/StageOnLogoSimple.png" alt="StageOn Footer Logo" id="footer__logo">
+                </picture>
+                
                 StageOn
               </a>
             </div>
