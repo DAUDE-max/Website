@@ -4,11 +4,11 @@ class MainHeader extends HTMLElement {
         this.innerHTML = `
             <nav class="navbar">
                 <div class="navbar__container">
-                    <a href="/index.html" id="navbar__logo">
+                    <a href="index.html" id="navbar__logo">
                         <picture>
-                            <source srcset="/img/logos/StageOnLogoSimple.webp" type="image/webp">
-                            <source srcset="/img/logos/StageOnLogoSimple.png" type="image/png">
-                            <img src="/img/logos/StageOnLogoSimple.png" alt="StageOn Logo" id="logo__img">
+                            <source srcset="/img/logos/StageOnLogoSimple.webp" type="image/webp" width="540" height="540">
+                            <source srcset="/img/logos/StageOnLogoSimple.png" type="image/png" width="540" height="540">
+                            <img src="/img/logos/StageOnLogoSimple.png" alt="StageOn Logo" id="logo__img" width="540" height="540">
                         </picture>
                         StageOn
                     </a>
@@ -49,7 +49,7 @@ class MainHeader extends HTMLElement {
 
         menuItems.forEach(item => {
             const href = item.getAttribute('href');
-            if (href === currentPage || (currentPage === "" && href === "/index.html")) {
+            if (href === currentPage || (currentPage === "" && href === "index.html")) {
                 item.classList.add('active');
             }
         });
@@ -86,9 +86,9 @@ class MainFooter extends HTMLElement {
             <div class="footer__logo">
               <a href="index.html">
                 <picture>
-                    <source srcset="img/logos/StageOnLogoSimple.webp" type="image/webp">
-                    <source srcset="img/logos/StageOnLogoSimple.png" type="image/png">
-                    <img src="img/logos/StageOnLogoSimple.png" alt="StageOn Footer Logo" id="footer__logo">
+                    <source srcset="img/logos/StageOnLogoSimple.webp" type="image/webp" width="540" height="540">
+                    <source srcset="img/logos/StageOnLogoSimple.png" type="image/png" width="540" height="540">
+                    <img src="img/logos/StageOnLogoSimple.png" alt="StageOn Footer Logo" id="footer__logo" width="540" height="540">
                 </picture>
                 
                 StageOn

@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="StageOn Veranstaltungstechnik; Verleih von Eventtechnik und Dienstleistungen für Events und Veranstaltungen in Ingolstadt und Umgebung">
 
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="preload" href="css/base.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="css/home.css" as="style" onload="this.rel='stylesheet'">
     <link rel="canonical">
 
 
@@ -65,9 +65,9 @@
             </div>
             <div class="home-img">
                 <picture>
-                    <source srcset="/img/logos/StageOnLogo.webp" type="image/webp">
-                    <source srcset="/img/logos/StageOnLogo.png" type="image/png">
-                    <img src="/img/logos/StageOnLogo.png" alt="pic" id="home-img">
+                    <source srcset="/img/logos/StageOnLogo.webp" type="image/webp" width="1080" height="1080">
+                    <source srcset="/img/logos/StageOnLogo.png" type="image/png" width="1080" height="1080">
+                    <img src="/img/logos/StageOnLogo.png" alt="pic" id="home-img" width="1080" height="1080">
                 </picture>
             </div>
         </div>
