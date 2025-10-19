@@ -65,6 +65,13 @@
   align-items: center;
 }
 
+.picture {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 .service-image img {
   width: 100%;
   height: auto;
