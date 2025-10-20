@@ -6,9 +6,9 @@ class MainHeader extends HTMLElement {
                 <div class="navbar__container">
                     <a href="index.html" id="navbar__logo">
                         <picture>
-                            <source srcset="/img/logos/StageOnLogoSimple.webp" type="image/webp" width="80" height="80">
-                            <source srcset="/img/logos/StageOnLogoSimple.png" type="image/png" width="80" height="80">
-                            <img src="/img/logos/StageOnLogoSimple.png" alt="StageOn Logo" id="logo__img" width="80" height="80">
+                            <source srcset="/img/logos/StageOnLogoSimple.webp" type="image/webp">
+                            <source srcset="/img/logos/StageOnLogoSimple.png" type="image/png">
+                            <img src="/img/logos/StageOnLogoSimple.png" alt="StageOn Logo" id="logo__img" width="160" height="160">
                         </picture>
                         StageOn
                     </a>
@@ -25,7 +25,7 @@ class MainHeader extends HTMLElement {
                 </div>
             </nav>
         `;
-
+        
         this.initMobileMenu();
         this.highlightCurrentPage();
         this.addScrollShadow();
@@ -86,9 +86,9 @@ class MainFooter extends HTMLElement {
             <div class="footer__logo">
               <a href="index.html">
                 <picture>
-                    <source srcset="img/logos/StageOnLogoSimple.webp" type="image/webp" width="540" height="540">
-                    <source srcset="img/logos/StageOnLogoSimple.png" type="image/png" width="540" height="540">
-                    <img src="img/logos/StageOnLogoSimple.png" alt="StageOn Footer Logo" id="footer__logo" width="80" height="80">
+                    <source srcset="img/logos/StageOnLogoSimple.webp" type="image/webp">
+                    <source srcset="img/logos/StageOnLogoSimple.png" type="image/png">
+                    <img src="img/logos/StageOnLogoSimple.png" alt="StageOn Footer Logo" id="footer__logo" width="160" height="160">
                 </picture>
                 
                 StageOn

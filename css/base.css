@@ -8,11 +8,20 @@
   text-decoration: none;
 }
 
+@font-face {
+    font-family: "Kumbh Sans";
+    src: url("/fonts/KumbhSans.ttf") format("ttf");
+    font-display: swap;
+}
+
 body {
   margin: 0;
   line-height: 1.6;
   background-color: #F2F2F2;
+  font-family: "Kumbh Sans", "Helvetica Neue", Arial, sans-serif;
 }
+
+
 
 /* === Navigation === */
 .navbar {

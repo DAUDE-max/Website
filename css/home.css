@@ -30,18 +30,21 @@
   height: auto;
 }
 
-.logo {
-    background-image: url('/img/logos/StageOnLogo.png');
-    width: 640px;
-    height: 640px;
-    background-size: contain;
-    background-repeat: no-repeat;
+.img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+
 }
 
 #home-img {
-  width: auto;
-  height: 40rem;
-  display: block;
+    width: 100%;
+    max-width: 40rem;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    display: block;
 }
 
 /* === Home Mobile Styles === */

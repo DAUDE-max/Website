@@ -9,15 +9,16 @@
   font-size: 6rem;
 }
 
-.contact-team {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  margin: 2rem auto;
-  justify-content: space-around;
+.contact-container {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem auto;
+    justify-content: space-around;
 }
 
-.contact-team h2 {
+.contact-container h2 {
   text-align: center;
   font-size: 2rem;
   margin: 0;
@@ -56,20 +57,30 @@
 }
 
 .contact-img {
-  background-color: #e0e0e0;
-  padding: 1rem;
-  border-radius: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: auto;
-  width: 100%;
+    background-color: #e0e0e0;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
 }
 
 #contact-img {
-  width: 40rem;
-  height: auto;
-  display: block;
+    width: 100%;
+    max-width: 40rem;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    display: block;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+
 }
 
 .b1 {
@@ -83,19 +94,19 @@
 
 /* === Contact Mobile Styles === */
 @media (max-width: 768px) {
-  .contact-team {
-    flex-direction: column;
-    text-align: center;
+  .contact-container {
+      grid-template-columns: auto;
+      height: auto;
+      flex-direction: column;
   }
 
   .contact-img {
-    width: 90%;
-    height: auto;
-    margin-bottom: 2rem;
+    width: 80%;
+    margin: 0 auto;
   }
 
   #contact-img {
-    width: 80%;
+    width: 100%;
     height: auto;
   }
 
