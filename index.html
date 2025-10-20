@@ -49,6 +49,17 @@
 <title>StageOn - Ihr Partner für Eventtechnik aus Ingolstadt</title>
 </head>
 <body>
+
+    <script>
+        (function () {
+           var img = new Image();
+           img.onload = img.onerror = function () {
+               document.body.classList.add(img.height === 2 ? 'webp' : 'no-webp');
+            };
+            img.src =
+                'data:image/webp;base64,UklGRiIAAABXRUJQVlA4TAYAAAAvAAAAAAfQ//73v/+BiOh/AAA=';
+        })();
+    </script>
     <script><%= readFile('node_modules/webp-in-css/polyfill.js') %></script>
 
     <!--Navigations-leiste-->
@@ -79,15 +90,6 @@
     <!--Fußleiste-->
     <main-footer></main-footer>
 
-    <script>
-        (function () {
-            var img = new Image();
-            img.onload = img.onerror = function () {
-                document.body.classList.add(img.height === 2 ? 'webp' : 'no-webp');
-            };
-            img.src =
-                'data:image/webp;base64,UklGRiIAAABXRUJQVlA4TAYAAAAvAAAAAAfQ//73v/+BiOh/AAA=';
-        })();
-    </script>
+
 
 </body>

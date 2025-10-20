@@ -1,4 +1,3 @@
-import 'webp-in-css/polyfill';
 
 function CopyToClipboard(text, targetEl, inverted = false) {
   if (!navigator.clipboard) {

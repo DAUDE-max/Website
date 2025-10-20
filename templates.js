@@ -6,9 +6,9 @@ class MainHeader extends HTMLElement {
                 <div class="navbar__container">
                     <a href="index.html" id="navbar__logo">
                         <picture>
-                            <source srcset="/img/logos/StageOnLogoSimple.webp" type="image/webp" width="540" height="540">
-                            <source srcset="/img/logos/StageOnLogoSimple.png" type="image/png" width="540" height="540">
-                            <img src="/img/logos/StageOnLogoSimple.png" alt="StageOn Logo" id="logo__img" width="60" height="60">
+                            <source srcset="/img/logos/StageOnLogoSimple.webp" type="image/webp" width="80" height="80">
+                            <source srcset="/img/logos/StageOnLogoSimple.png" type="image/png" width="80" height="80">
+                            <img src="/img/logos/StageOnLogoSimple.png" alt="StageOn Logo" id="logo__img" width="80" height="80">
                         </picture>
                         StageOn
                     </a>

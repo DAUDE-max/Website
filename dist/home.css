@@ -31,11 +31,19 @@
 }
 
 .logo {
-    background-image: url('/img/logos/StageOnLogo.webp');
+    background-image: url('/img/logos/StageOnLogo.png');
     width: 640px;
     height: 640px;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+body.no-webp .logo, body.no-js .logo {
+    background-image: url('/img/logos/StageOnLogo.png');
+}
+
+body.webp .logo {
+    background-image: url('/img/logos/StageOnLogo.webp');
 }
 
 #home-img {
