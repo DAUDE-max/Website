@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="StageOn Veranstaltungstechnik; Verleih von Eventtechnik und Dienstleistungen für Events und Veranstaltungen in Ingolstadt und Umgebung">
 
-    <link rel="preload" href="css/base.css" as="style" onload="this.rel='stylesheet'">
-    <link rel="preload" href="css/services.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="dist/base.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="dist/services.css" as="style" onload="this.rel='stylesheet'">
 
     <script type="application/ld+json">
         {
@@ -32,6 +32,7 @@
 <title>StageOn Eventtechnik - Leistungen</title>
 </head>
 <body>
+    <script><%= readFile('node_modules/webp-in-css/polyfill.js') %></script>
 
 <!--Navigations-leiste-->
     <main-header></main-header>
@@ -149,4 +150,16 @@
 
 <!--Fußleiste-->
     <main-footer></main-footer>
+
+    <script>
+        (function () {
+            var img = new Image();
+            img.onload = img.onerror = function () {
+                document.body.classList.add(img.height === 2 ? 'webp' : 'no-webp');
+            };
+            img.src =
+                'data:image/webp;base64,UklGRiIAAABXRUJQVlA4TAYAAAAvAAAAAAfQ//73v/+BiOh/AAA=';
+        })();
+    </script>
+
 </body>

@@ -8,7 +8,7 @@ class MainHeader extends HTMLElement {
                         <picture>
                             <source srcset="/img/logos/StageOnLogoSimple.webp" type="image/webp" width="540" height="540">
                             <source srcset="/img/logos/StageOnLogoSimple.png" type="image/png" width="540" height="540">
-                            <img src="/img/logos/StageOnLogoSimple.png" alt="StageOn Logo" id="logo__img" width="540" height="540">
+                            <img src="/img/logos/StageOnLogoSimple.png" alt="StageOn Logo" id="logo__img" width="60" height="60">
                         </picture>
                         StageOn
                     </a>
@@ -88,7 +88,7 @@ class MainFooter extends HTMLElement {
                 <picture>
                     <source srcset="img/logos/StageOnLogoSimple.webp" type="image/webp" width="540" height="540">
                     <source srcset="img/logos/StageOnLogoSimple.png" type="image/png" width="540" height="540">
-                    <img src="img/logos/StageOnLogoSimple.png" alt="StageOn Footer Logo" id="footer__logo" width="540" height="540">
+                    <img src="img/logos/StageOnLogoSimple.png" alt="StageOn Footer Logo" id="footer__logo" width="80" height="80">
                 </picture>
                 
                 StageOn
