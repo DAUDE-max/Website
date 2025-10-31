@@ -1,10 +1,19 @@
 /* === Home Page Styles === */
+
+.container-section {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 1200px;
+  margin: 6rem auto 6rem;
+  gap: 6rem;
+}
+
 .home-container {
-  min-height: 80vh;
   display: flex;
   align-items: center;
   gap: 2rem;
-  margin: 2rem auto;
+  margin: 0 auto;
   justify-content: space-around;
 }
 
@@ -20,14 +29,39 @@
   margin: 0;
 }
 
-.home-img {
+.img-block {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   background-color: #e0e0e0;
   padding: 1rem;
   border-radius: 1rem;
   display: flex;
-  align-items: center;
   justify-content: center;
-  height: auto;
+  align-items: center;
+  width: 70%;
+}
+
+.text-block {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  font-size: 1.4rem;
+  width: 80%;
+  background-color: #e0e0e0;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.text-block h1 {
+  margin: 0 0 0 1rem;
+}
+
+.text-block p {
+  text-align: justify;
+  hyphens: auto;
+  width: 95%;
+  margin: 1rem 1.5rem 1rem auto;
+  line-height: 1.5;
 }
 
 .img {

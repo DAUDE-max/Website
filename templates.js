@@ -75,8 +75,8 @@ class MainFooter extends HTMLElement {
               <a href="impressum.html">Impressum / Datenschutz</a>
               <p class="footer__email">
                 Fragen an:
-                    <span class="email--copy" onclick="CopyToClipboard('stageon.eventtechnik@gmail.com', this)">
-                        stageon.eventtechnik@gmail.com
+                    <span class="email--copy" onclick="CopyToClipboard('kontakt@stageon.net', this)">
+                        kontakt@stageon.net
                     </span>
               </p>
             </div>
