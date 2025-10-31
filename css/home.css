@@ -1,5 +1,6 @@
 /* === Home Page Styles === */
 
+
 .container-section {
   display: flex;
   flex-direction: column;
@@ -10,10 +11,11 @@
 }
 
 .home-container {
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 2rem;
-  margin: 0 auto;
+  margin: 0 auto auto;
   justify-content: space-around;
 }
 
@@ -30,14 +32,16 @@
 }
 
 .img-block {
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  background-color: #e0e0e0;
-  padding: 1rem;
-  border-radius: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70%;
+  margin: 0 !important;
+  height: auto;
+  width: 100%;
+}
+
+#home-img {
+  margin: auto !important;
+  aspect-ratio: 10 / 1;
+  width: 100% !important;
+  height: auto !important;
 }
 
 .text-block {
@@ -62,23 +66,6 @@
   width: 95%;
   margin: 1rem 1.5rem 1rem auto;
   line-height: 1.5;
-}
-
-.img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    display: block;
-
-}
-
-#home-img {
-    width: 100%;
-    max-width: 40rem;
-    aspect-ratio: 1 / 1;
-    object-fit: contain;
-    display: block;
 }
 
 /* === Home Mobile Styles === */
