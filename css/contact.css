@@ -25,24 +25,6 @@
   margin: 0;
 }
 
-contact.Profile {
-  display: flex;
-  height: auto;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
-
-.Foto {
-    width: 100%;
-    height: auto;
-    max-width: 30rem;
-    object-fit: contain;
-    display: block;
-    border-radius: 1rem;
-    overflow: hidden;
-}
-
 .contact-contact {
   display: flex;
   flex-direction: column;
@@ -75,30 +57,37 @@ contact.Profile {
   gap: 0.5rem;
 }
 
+
+
+contact.Profile {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
 .contact-img {
     background-color: #e0e0e0;
     padding: 1rem;
     border-radius: 1rem;
+    max-width: 40rem !important;
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 #contact-img {
+  aspect-ratio: 3/4;
+    border-radius: 1.5rem;
+    overflow: hidden;
     width: 100%;
     max-width: 40rem;
     object-fit: contain;
     display: block;
 }
 
-.img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
 
-}
 
 .b1 {
   display: flex;
