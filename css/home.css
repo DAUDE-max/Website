@@ -6,8 +6,8 @@
   flex-direction: column;
   width: 90%;
   max-width: 1200px;
-  margin: 6rem auto 6rem;
-  gap: 6rem;
+  margin: 4rem auto 4rem;
+  gap: 4rem;
 }
 
 .home-container {
@@ -38,10 +38,12 @@
 }
 
 #home-img {
-  margin: auto !important;
-  aspect-ratio: 10 / 1;
-  width: 100% !important;
-  height: auto !important;
+    display: block;
+    width: 80%;
+    max-width: 1000px;
+    height: auto;
+    margin: 0  auto;
+    object-fit: contain;
 }
 
 .text-block {
