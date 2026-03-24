@@ -97,7 +97,7 @@ class MainFooter extends HTMLElement {
           </div>
 
           <div class="footer__section footer__right">
-            <p class="footer__text">2025 StageOn.<br>All Rights reserved.</p>
+            <p class="footer__text">2026 StageOn.<br>All Rights reserved.</p>
           </div>
 
         </div>
